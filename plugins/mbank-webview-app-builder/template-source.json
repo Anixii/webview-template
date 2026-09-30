@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "repository": null,
+  "ref": null,
+  "packageManager": "yarn",
+  "verificationScripts": ["lint:type", "build"]
+}

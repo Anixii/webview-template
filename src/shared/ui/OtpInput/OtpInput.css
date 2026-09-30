@@ -1,0 +1,70 @@
+.my-otp {
+  display: inline-flex;
+  position: relative;
+  width: max-content;
+}
+
+.my-otp--disabled {
+  opacity: 0.55;
+}
+
+.my-otp__input {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.my-otp__slots {
+  display: flex;
+  gap: 8px;
+}
+
+.my-otp__slot {
+  position: relative;
+  display: flex;
+  width: 55px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--color-background-surface);
+  color: var(--color-text-primary);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.my-otp__slot--active {
+  outline: 2px solid rgba(18, 153, 88, 0.45);
+  outline-offset: 2px;
+}
+
+.my-otp__placeholder {
+  font-size: 24px;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.my-otp__char {
+  pointer-events: none;
+}
+
+.my-otp__caret {
+  position: absolute;
+  width: 2px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: var(--color-brand);
+  animation: my-otp-caret-blink 1s steps(2, start) infinite;
+}
+
+@keyframes my-otp-caret-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+  }
+}
